@@ -8,15 +8,15 @@ PennController.ResetPrefix(null) // Keep this here
 //       because the command EyeTrackerURL below points to a dummy URL in the
 
 // Resources are hosted as ZIP files on a distant server
-//PreloadZip("https://files.lab.florianschwarz.net/ibexfiles/Onlyclefts2VW/Pictures.zip")
-//PreloadZip("https://files.lab.florianschwarz.net/ibexfiles/Onlyclefts2VW/AudioContext.zip")
-//PreloadZip("https://files.lab.florianschwarz.net/ibexfiles/Onlyclefts2VW/AudioTest.zip")
+PreloadZip("https://campuspress.yale.edu/michaelwilson/2023/03/audio.zip")
+PreloadZip("https://campuspress.yale.edu/michaelwilson/2023/03/images.zip")
 
 // Replace the URL with one that points to a PHP script that you uploaded to your webserver
 // see: https://doc.pcibex.net/how-to-guides/collecting-eyetracking-data/#php-script
-EyeTrackerURL("https://dummy.url/script.php")
+// EyeTrackerURL("https://dummy.url/script.php")
 
-var REQUIRED_ACCURACY = 0 // currently 0 for debugging/testing script functionality
+// currently 0 for debugging/testing script functionality
+var REQUIRED_ACCURACY = 0
 var MAX_CALIBRATION_ATTEMPTS = 2
 
 // Welcome page: we do a first calibration here---meanwhile, the resources are preloading
