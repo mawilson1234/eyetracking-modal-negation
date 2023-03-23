@@ -1,7 +1,7 @@
 list,sentence,type,item,Specificitem,verb,Condition,Typecondition,image1,image2,image3,image4,target-picture,audio
-1,Don't take the onion from the table.,warm-up,vegetables,,take,,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,pepper,vegetables1.mp3
-1,Bring me the pumpkin from the table.,warm-up,vegetables,,bring,,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,pumpkin,vegetables2.mp3
-1,Bring me the cucumber.,warm-up,vegetables,,bring/cut,,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,cucumber,vegetables3.mp3
+1,Don't take the onion from the table.,warm-up,vegetables,.,take,.,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,pepper,vegetables1.mp3
+1,Bring me the pumpkin from the table.,warm-up,vegetables,.,bring,.,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,pumpkin,vegetables2.mp3
+1,Bring me the cucumber.,warm-up,vegetables,.,bring/cut,.,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,cucumber,vegetables3.mp3
 1,You must not wear the white scarf.,test,clothes,whitescarf,wear,mustnot,test,whitescarf.png,bluescarf.png,whitescarfcr.png,bluescarfcr.png,bluescarf,mustnotclothes1.mp3
 1,You must not drink the sour milk.,test,drinks,milk,drink,mustnot,test,milk.png,chocolate.png,milkcr.png,chocolatecr.png,chocolate,mustnotdrinks1.mp3
 1,You must not eat the big banana.,test,fruits,banana,eat,mustnot,test,banana.png,apple.png,bananacr.png,applecr.png,apple,mustnotfruits1.mp3
@@ -34,9 +34,9 @@ list,sentence,type,item,Specificitem,verb,Condition,Typecondition,image1,image2,
 1,You may touch the brown teddy.,control,toys,teddy,touch,may,control,teddy.png,bunny.png,teddycr.png,bunnycr.png,teddy,maytoys4.mp3
 1,You may wear the red trousers.,control,clothes,redtrousers,wear,may,control,redtrousers.png,bluetrousers.png,redtrouserscr.png,bluetrouserscr.png,redtrousers,mayclothes4.mp3
 1,You may drink the hot chocolate.,control,drinks,hotchocolate,drink,may,control,hotchocolate.png,orangejuice.png,hotchocolatecr.png,orangejuicecr.png,hotchocolate,maydrinks4.mp3
-2,Don't take the onion from the table.,warm-up,vegetables,,take,,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,,vegetables1.mp3
-2,Bring me the pumpkin from the table.,warm-up,vegetables,,bring,,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,,vegetables2.mp3
-2,Bring me the cucumber.,warm-up,vegetables,,bring/cut,,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,,vegetables3.mp3
+2,Don't take the onion from the table.,warm-up,vegetables,.,take,.,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,.,vegetables1.mp3
+2,Bring me the pumpkin from the table.,warm-up,vegetables,.,bring,.,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,.,vegetables2.mp3
+2,Bring me the cucumber.,warm-up,vegetables,.,bring/cut,.,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,.,vegetables3.mp3
 2,You need not wear the white scarf.,test,clothes,whitescarf,wear,neednot,test,whitescarf.png,bluescarf.png,whitescarfcr.png,bluescarfcr.png,bluescarf,neednotclothes1.mp3
 2,You need not drink the sour milk.,test,drinks,milk,drink,neednot,test,milk.png,chocolate.png,milkcr.png,chocolatecr.png,chocolate,neednotdrinks1.mp3
 2,You need not eat the big banana.,test,fruits,banana,eat,neednot,test,banana.png,apple.png,bananacr.png,applecr.png,apple,neednotfruits1.mp3
@@ -69,9 +69,9 @@ list,sentence,type,item,Specificitem,verb,Condition,Typecondition,image1,image2,
 2,You may touch the brown teddy.,control,toys,teddy,touch,may,control,teddy.png,bunny.png,teddycr.png,bunnycr.png,teddy,maytoys4.mp3
 2,You may wear the red trousers.,control,clothes,redtrousers,wear,may,control,redtrousers.png,bluetrousers.png,redtrouserscr.png,bluetrouserscr.png,redtrousers,mayclothes4.mp3
 2,You may drink the hot chocolate.,control,drinks,hotchocolate,drink,may,control,hotchocolate.png,orangejuice.png,hotchocolatecr.png,orangejuicecr.png,hotchocolate,maydrinks4.mp3
-3,Don't take the onion from the table.,warm-up,vegetables,,take,,warmup,pepper,onion.png,peppercr.png,onioncr.png,pepper,vegetables1.mp3
-3,Bring me the pumpkin from the table.,warm-up,vegetables,,bring,,warmup,pumpkin,cabbage.png,pumpkincr.png,cabbagecr.png,pumpkin,vegetables2.mp3
-3,Bring me the cucumber.,warm-up,vegetables,,bring/cut,,warmup,cucumber,tomato.png,cucumbercr.png,tomatocr.png,cucumber,vegetables3.mp3
+3,Don't take the onion from the table.,warm-up,vegetables,.,take,.,warmup,pepper,onion.png,peppercr.png,onioncr.png,pepper,vegetables1.mp3
+3,Bring me the pumpkin from the table.,warm-up,vegetables,.,bring,.,warmup,pumpkin,cabbage.png,pumpkincr.png,cabbagecr.png,pumpkin,vegetables2.mp3
+3,Bring me the cucumber.,warm-up,vegetables,.,bring/cut,.,warmup,cucumber,tomato.png,cucumbercr.png,tomatocr.png,cucumber,vegetables3.mp3
 3,You must not wear the white scarf.,test,clothes,whitescarf,wear,mustnot,test,whitescarf,bluescarf.png,whitescarfcr.png,bluescarfcr.png,bluescarf,mustnotclothes1.mp3
 3,You must not drink the sour milk.,test,drinks,milk,drink,mustnot,test,milk,chocolate.png,milkcr.png,chocolatecr.png,chocolate,mustnotdrinks1.mp3
 3,You must not eat the big banana.,test,fruits,banana,eat,mustnot,test,banana,apple.png,bananacr.png,applecr.png,apple,mustnotfruits1.mp3
@@ -104,9 +104,9 @@ list,sentence,type,item,Specificitem,verb,Condition,Typecondition,image1,image2,
 3,You may not touch the brown teddy.,control,toys,teddy,touch,maynot,control,teddy,bunny.png,teddycr.png,bunnycr.png,bunny,maynottoys4.mp3
 3,You may not wear the red trousers.,control,clothes,redtrousers,wear,maynot,control,redtrousers,bluetrousers.png,redtrouserscr.png,bluetrouserscr.png,bluetrousers,maynotclothes4.mp3
 3,You may not drink the hot chocolate.,control,drinks,hotchocolate,drink,maynot,control,hotchocolate,orangejuice.png,hotchocolatecr.png,orangejuicecr.png,orangejuice,maynotdrinks4.mp3
-4,Don't take the onion from the table.,warm-up,vegetables,,take,,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,,vegetables1.mp3
-4,Bring me the pumpkin from the table.,warm-up,vegetables,,bring,,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,,vegetables2.mp3
-4,Bring me the cucumber.,warm-up,vegetables,,bring/cut,,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,,vegetables3.mp3
+4,Don't take the onion from the table.,warm-up,vegetables,.,take,.,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,.,vegetables1.mp3
+4,Bring me the pumpkin from the table.,warm-up,vegetables,.,bring,.,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,.,vegetables2.mp3
+4,Bring me the cucumber.,warm-up,vegetables,.,bring/cut,.,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,.,vegetables3.mp3
 4,You need not wear the white scarf.,test,clothes,whitescarf,wear,neednot,test,whitescarf.png,bluescarf.png,whitescarfcr.png,bluescarfcr.png,bluescarf,neednotclothes1.mp3
 4,You need not drink the sour milk.,test,drinks,milk,drink,neednot,test,milk.png,chocolate.png,milkcr.png,chocolatecr.png,chocolate,neednotdrinks1.mp3
 4,You need not eat the big banana.,test,fruits,banana,eat,neednot,test,banana.png,apple.png,bananacr.png,applecr.png,apple,neednotfruits1.mp3
