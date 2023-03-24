@@ -1,0 +1,138 @@
+Group,sentence,type,item,Specificitem,verb,Condition,Typecondition,image1,image2,image3,image4,target-picture,audio
+1,You must not wear the white scarf.,test,clothes,whitescarf,wear,mustnot,test,whitescarf.png,bluescarf.png,whitescarfcr.png,bluescarfcr.png,bluescarf,mustnotclothes1.mp3
+1,You must not drink the sour milk.,test,drinks,milk,drink,mustnot,test,milk.png,chocolate.png,milkcr.png,chocolatecr.png,chocolate,mustnotdrinks1.mp3
+1,You must not eat the big banana.,test,fruits,banana,eat,mustnot,test,banana.png,apple.png,bananacr.png,applecr.png,apple,mustnotfruits1.mp3
+1,You must not touch the chubby penguin.,test,toys,penguin,touch,mustnot,test,penguin.png,camel.png,penguincr.png,camelcr.png,camel,mustnottoys1.mp3
+1,You must not touch the red car.,test,toys,car,touch,mustnot,test,car.png,ball.png,carcr.png,ballcr.png,ball,mustnottoys2.mp3
+1,You must not eat the plump orange.,test,fruits,orange,eat,mustnot,test,orange.png,pear.png,orangecr.png,pearcr.png,pear,mustnotfruits2.mp3
+1,You must not wear the orange beanie.,test,clothes,orangebeanie,wear,mustnot,test,orangebeanie.png,greenbeanie.png,orangebeaniecr.png,greenbeaniecr.png,greenbeanie,mustnotclothes2.mp3
+1,You must not drink the pear juice.,test,drinks,pearjuice,drink,mustnot,test,pearjuice.png,applejuice.png,pearjuicecr.png,applejuicecr.png,applejuice,mustnotdrinks2.mp3
+1,You need not eat the spinach juice.,test,drinks,spinachjuice,drink,neednot,test,spinachjuice.png,carrotjuice.png,spinachjuicecr.png,carrotjuicecr.png,carrotjuice,neednotdrinks3.mp3
+1,You need not wear the green tshirt..,test,clothes,greentshirt,wear,neednot,test,greentshirt.png,purpletshirt.png,greentshirtcr.png,purpletshirtcr.png,purpletshirt,neednotclothes3.mp3
+1,You need not eat the squishy kiwi.,test,fruits,kiwi,eat,neednot,test,kiwi.png,coconut.png,kiwicr.png,coconutcr.png,coconut,neednotfruits3.mp3
+1,You need not touch the yellow duck.,test,toys,duck,touch,neednot,test,duck.png,truck.png,duckcr.png,truckcr.png,truck,neednottoys3.mp3
+1,You need not drink the cinnamon tea.,test,drinks,cinnamontea,drink,neednot,test,cinnamontea.png,rosetea.png,cinnamonteacr.png,roseteacr.png,rosetea,neednotdrinks4.mp3
+1,You need not wear the orange hat.,test,clothes,orangehat,wear,neednot,test,orangehat.png,blackhat.png,orangehatcr.png,blackhatcr.png,blackhat,neednotclothes4.mp3
+1,You need not touch the white dog.,test,toys,dog,touch,neednot,test,dog.png,cat.png,dogcr.png,catcr.png,cat,neednottoys4.mp3
+1,You need not eat the huge strawberry.,test,fruits,strawberry,eat,neednot,test,strawberry.png,cherry.png,strawberrycr.png,cherrycr.png,cherry,neednotfruits4.mp3
+1,You may not wear colored socks.,control,clothes,yellowsocks,wear,maynot,control,yellowsocks.png,redsocks.png,yellowsockscr.png,redsockscr.png,bothstrike,maynotfruits1.mp3
+1,You may not drink lemon drinks.,control,drinks,lemonade,drink,maynot,control,lemonade.png,lemontea.png,lemonadecr.png,lemonteacr.png,bothstrike,maynotdrinks1.mp3
+1,You may not touch farm animals.,control,toys,cow,touch,maynot,control,cow.png,sheep.png,cowcr.png,sheepcr.png,bothstrike,maynottoys1.mp3
+1,You may not eat summer melons.,control,fruits,watermelon,eat,maynot,control,watermelon.png,sweetmelon.png,watermeloncr.png,sweetmeloncr.png,bothstrike,maynotfruits1.mp3
+1,You may not drink strawberry juice.,control,drinks,strawberryjuice,drink,maynot,control,strawberryjuice.png,grapejuice.png,strawberryjuicecr.png,grapejuicecr.png,grapejuice,maynotdrinks2.mp3
+1,You may not wear the pink jacket.,control,clothes,pinkjacket,wear,maynot,control,pinkjacket.png,whitejacket.png,pinkjacketcr.png,whitejacketcr.png,whitejacket,maynotclothes2.mp3
+1,You may not eat the purple grape.,control,fruits,grapes,eat,maynot,control,grape.png,peach.png,grapecr.png,peachcr.png,peach,maynotfruits2.mp3
+1,You may not touch mickeymouse,control,toys,mickeymouse,touch,maynot,control,mickeymouse.png,dinosaur.png,mickeymousecr.png,dinosaurcr.png,dinosaur,maynottoys2.mp3
+1,You may drink light fluids.,control,drinks,mineralwater,drink,may,control,mineralwater.png,chamomiletea.png,mineralwatercr.png,chamomileteacr.png,both,maydrinks3.mp3
+1,You may wear colored jumpers.,control,clothes,bluesweater,wear,may,control,bluesweater.png,yellowsweater.png,bluesweatercr.png,yellowsweatercr.png,both,mayclothes3.mp3
+1,You may touch colorful toys.,control,toys,house,touch,may,control,house.png,bicycle.png,housecr.png,bicyclecr.png,both,maytoys3.mp3
+1,You may eat sweet fruits.,control,fruits,plum,eat,may,control,plum.png,pineapple.png,plumcr.png,pineapplecr.png,both,mayfruits3.mp3
+1,You may eat the juicy apricot.,control,fruits,apricot,eat,may,control,apricot.png,blackberry.png,apricotcr.png,blackberrycr.png,apricot,mayfruits4.mp3
+1,You may touch the brown teddy.,control,toys,teddy,touch,may,control,teddy.png,bunny.png,teddycr.png,bunnycr.png,teddy,maytoys4.mp3
+1,You may wear the red trousers.,control,clothes,redtrousers,wear,may,control,redtrousers.png,bluetrousers.png,redtrouserscr.png,bluetrouserscr.png,redtrousers,mayclothes4.mp3
+1,You may drink the hot chocolate.,control,drinks,hotchocolate,drink,may,control,hotchocolate.png,orangejuice.png,hotchocolatecr.png,orangejuicecr.png,hotchocolate,maydrinks4.mp3
+2,Don't take the onion from the table.,warm-up,vegetables,.,take,.,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,.,vegetables1.mp3
+2,Bring me the pumpkin from the table.,warm-up,vegetables,.,bring,.,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,.,vegetables2.mp3
+2,Bring me the cucumber.,warm-up,vegetables,.,bring/cut,.,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,.,vegetables3.mp3
+2,You need not wear the white scarf.,test,clothes,whitescarf,wear,neednot,test,whitescarf.png,bluescarf.png,whitescarfcr.png,bluescarfcr.png,bluescarf,neednotclothes1.mp3
+2,You need not drink the sour milk.,test,drinks,milk,drink,neednot,test,milk.png,chocolate.png,milkcr.png,chocolatecr.png,chocolate,neednotdrinks1.mp3
+2,You need not eat the big banana.,test,fruits,banana,eat,neednot,test,banana.png,apple.png,bananacr.png,applecr.png,apple,neednotfruits1.mp3
+2,You need not touch the chubby penguin.,test,toys,penguin,touch,neednot,test,penguin.png,camel.png,penguincr.png,camelcr.png,camel,neednottoys1.mp3
+2,You need not touch the red car.,test,toys,car,touch,neednot,test,car.png,ball.png,carcr.png,ballcr.png,ball,neednottoys2.mp3
+2,You need not eat the plump orange.,test,fruits,orange,eat,neednot,test,orange.png,pear.png,orangecr.png,pearcr.png,pear,neednotfruits2.mp3
+2,You need not wear the orange beanie.,test,clothes,orangebeanie,wear,neednot,test,orangebeanie.png,greenbeanie.png,orangebeaniecr.png,greenbeaniecr.png,greenbeanie,neednotclothes2.mp3
+2,You need not drink the pear juice.,test,drinks,pearjuice,drink,neednot,test,pearjuice.png,applejuice.png,pearjuicecr.png,applejuicecr.png,applejuice,neednotdrinks2.mp3
+2,You must not eat the spinach juice.,test,drinks,spinachjuice,drink,mustnot,test,spinachjuice.png,carrotjuice.png,spinachjuicecr.png,carrotjuicecr.png,carrotjuice,mustnotdrinks3.mp3
+2,You must not wear the green T-shirt.,test,clothes,greentshirt,wear,mustnot,test,greentshirt.png,purpletshirt.png,greentshirtcr.png,purpletshirtcr.png,purpletshirt,mustnotclothes3.mp3
+2,You must not eat the juicy kiwi.,test,fruits,kiwi,eat,mustnot,test,kiwi.png,coconut.png,kiwicr.png,coconutcr.png,coconut,mustnotfruits3.mp3
+2,You must not touch the yellow duck.,test,toys,duck,touch,mustnot,test,duck.png,truck.png,duckcr.png,truckcr.png,truck,mustnottoys3.mp3
+2,You must not drink cinnamon tea.,test,drinks,cinnamontea,drink,mustnot,test,cinnamontea.png,rosetea.png,cinnamonteacr.png,roseteacr.png,rosetea,mustnotdrinks4.mp3
+2,You must not wear the orange hat.,test,clothes,orangehat,wear,mustnot,test,orangehat.png,blackhat.png,orangehatcr.png,blackhatcr.png,blackhat,mustnotclothes4.mp3
+2,You must not touch the white nice dog.,test,toys,dog,touch,mustnot,test,dog.png,cat.png,dogcr.png,catcr.png,cat,mustnottoys4.mp3
+2,You must not eat the huge strawberry.,test,fruits,strawberry,eat,mustnot,test,strawberry.png,cherry.png,strawberrycr.png,cherrycr.png,cherry,mustnotfruits4.mp3
+2,You may not wear colored socks.,control,clothes,yellowsocks,wear,maynot,control,yellowsocks.png,redsocks.png,yellowsockscr.png,redsockscr.png,bothstrike,maynotfruits1.mp3
+2,You may not drink lemon drinks.,control,drinks,lemonade,drink,maynot,control,lemonade.png,lemontea.png,lemonadecr.png,lemonteacr.png,bothstrike,maynotdrinks1.mp3
+2,You may not touch farm animals.,control,toys,cow,touch,maynot,control,cow.png,sheep.png,cowcr.png,sheepcr.png,bothstrike,maynottoys1.mp3
+2,You may not eat  melons.,control,fruits,watermelon,eat,maynot,control,watermelon.png,sweetmelon.png,watermeloncr.png,sweetmeloncr.png,bothstrike,maynotfruits1.mp3
+2,You may not drink strawberry juice.,control,drinks,strawberryjuice,drink,maynot,control,strawberryjuice.png,grapejuice.png,strawberryjuicecr.png,grapejuicecr.png,grapejuice,maynotdrinks2.mp3
+2,You may not eat the pink jacket.,control,clothes,pinkjacket,wear,maynot,control,pinkjacket.png,whitejacket.png,pinkjacketcr.png,whitejacketcr.png,whitejacket,maynotclothes2.mp3
+2,You may not eat the purple grape.,control,fruits,grapes,eat,maynot,control,grape.png,peach.png,grapecr.png,peachcr.png,peach,maynotfruits2.mp3
+2,You may not touch mickeymouse,control,toys,mickeymouse,touch,maynot,control,mickeymouse.png,dinosaur.png,mickeymousecr.png,dinosaurcr.png,dinosaur,maynottoys2.mp3
+2,You may drink light fluids.,control,drinks,mineralwater,drink,may,control,mineralwater.png,chamomiletea.png,mineralwatercr.png,chamomileteacr.png,both,maydrinks3.mp3
+2,You may wear colored sweaters.,control,clothes,bluesweater,wear,may,control,bluesweater.png,yellowsweater.png,bluesweatercr.png,yellowsweatercr.png,both,mayclothes3.mp3
+2,You may touch colorful toys.,control,toys,house,touch,may,control,house.png,bicycle.png,housecr.png,bicyclecr.png,both,maytoys3.mp3
+2,You may eat sweet fruits.,control,fruits,plum,eat,may,control,plum.png,pineapple.png,plumcr.png,pineapplecr.png,both,mayfruits3.mp3
+2,You may eat the juicy apricot.,control,fruits,apricot,eat,may,control,apricot.png,blackberry.png,apricotcr.png,blackberrycr.png,apricot,mayfruits4.mp3
+2,You may touch the brown teddy.,control,toys,teddy,touch,may,control,teddy.png,bunny.png,teddycr.png,bunnycr.png,teddy,maytoys4.mp3
+2,You may wear the red trousers.,control,clothes,redtrousers,wear,may,control,redtrousers.png,bluetrousers.png,redtrouserscr.png,bluetrouserscr.png,redtrousers,mayclothes4.mp3
+2,You may drink the hot chocolate.,control,drinks,hotchocolate,drink,may,control,hotchocolate.png,orangejuice.png,hotchocolatecr.png,orangejuicecr.png,hotchocolate,maydrinks4.mp3
+3,Don't take the onion from the table.,warm-up,vegetables,.,take,.,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,pepper,vegetables1.mp3
+3,Bring me the pumpkin from the table.,warm-up,vegetables,.,bring,.,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,pumpkin,vegetables2.mp3
+3,Bring me the cucumber.,warm-up,vegetables,.,bring/cut,.,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,cucumber,vegetables3.mp3
+3,You must not wear the white scarf.,test,clothes,whitescarf,wear,mustnot,test,whitescarf.png,bluescarf.png,whitescarfcr.png,bluescarfcr.png,bluescarf,mustnotclothes1.mp3
+3,You must not drink the sour milk.,test,drinks,milk,drink,mustnot,test,milk.png,chocolate.png,milkcr.png,chocolatecr.png,chocolate,mustnotdrinks1.mp3
+3,You must not eat the big banana.,test,fruits,banana,eat,mustnot,test,banana.png,apple.png,bananacr.png,applecr.png,apple,mustnotfruits1.mp3
+3,You must not touch the chubby penguin.,test,toys,penguin,touch,mustnot,test,penguin.png,camel.png,penguincr.png,camelcr.png,camel,mustnottoys1.mp3
+3,You must not touch the red car.,test,toys,car,touch,mustnot,test,car.png,ball.png,carcr.png,ballcr.png,ball,mustnottoys2.mp3
+3,You must not eat the plump orange.,test,fruits,orange,eat,mustnot,test,orange.png,pear.png,orangecr.png,pearcr.png,pear,mustnotfruits2.mp3
+3,You must not wear the orange beanie.,test,clothes,orangebeanie,wear,mustnot,test,orangebeanie.png,greenbeanie.png,orangebeaniecr.png,greenbeaniecr.png,greenbeanie,mustnotclothes2.mp3
+3,You must not drink the pear juice.,test,drinks,pearjuice,drink,mustnot,test,pearjuice.png,applejuice.png,pearjuicecr.png,applejuicecr.png,applejuice,mustnotdrinks2.mp3
+3,You need not eat the spinach juice.,test,drinks,spinachjuice,drink,neednot,test,spinachjuice.png,carrotjuice.png,spinachjuicecr.png,carrotjuicecr.png,carrotjuice,neednotdrinks3.mp3
+3,You need not wear the green tshirt..,test,clothes,greentshirt,wear,neednot,test,greentshirt.png,purpletshirt.png,greentshirtcr.png,purpletshirtcr.png,purpletshirt,neednotclothes3.mp3
+3,You need not eat the squishy kiwi.,test,fruits,kiwi,eat,neednot,test,kiwi.png,coconut.png,kiwicr.png,coconutcr.png,coconut,neednotfruits3.mp3
+3,You need not touch the yellow duck.,test,toys,duck,touch,neednot,test,duck.png,truck.png,duckcr.png,truckcr.png,truck,neednottoys3.mp3
+3,You need not drink the cinnamon tea.,test,drinks,cinnamontea,drink,neednot,test,cinnamontea.png,rosetea.png,cinnamonteacr.png,roseteacr.png,rosetea,neednotdrinks4.mp3
+3,You need not wear the orange hat.,test,clothes,orangehat,wear,neednot,test,orangehat.png,blackhat.png,orangehatcr.png,blackhatcr.png,blackhat,neednotclothes4.mp3
+3,You need not touch the white dog.,test,toys,dog,touch,neednot,test,dog.png,cat.png,dogcr.png,catcr.png,cat,neednottoys4.mp3
+3,You need not eat the huge strawberry.,test,fruits,strawberry,eat,neednot,test,strawberry.png,cherry.png,strawberrycr.png,cherrycr.png,cherry,neednotfruits4.mp3
+3,You may wear colored socks.,control,clothes,yellowsocks,wear,may,control,yellowsocks.png,redsocks.png,yellowsockscr.png,redsockscr.png,both,mayfruits1.mp3
+3,You may drink lemon drinks.,control,drinks,lemonade,drink,may,control,lemonade.png,lemontea.png,lemonadecr.png,lemonteacr.png,both,maydrinks1.mp3
+3,You may touch farm animals.,control,toys,cow,touch,may,control,cow.png,sheep.png,cowcr.png,sheepcr.png,both,maytoys1.mp3
+3,You may eat summer melons.,control,fruits,watermelon,eat,may,control,watermelon.png,sweetmelon.png,watermeloncr.png,sweetmeloncr.png,both,mayfruits1.mp3
+3,You may drink strawberry juice.,control,drinks,strawberryjuice,drink,may,control,strawberryjuice.png,grapejuice.png,strawberryjuicecr.png,grapejuicecr.png,strawberryjuice,maydrinks2.mp3
+3,You may wear the pink jacket.,control,clothes,pinkjacket,wear,may,control,pinkjacket.png,whitejacket.png,pinkjacketcr.png,whitejacketcr.png,pinkjacket,mayclothes2.mp3
+3,You may eat the purple grape.,control,fruits,grapes,eat,may,control,grape.png,peach.png,grapecr.png,peachcr.png,grape,mayfruits2.mp3
+3,You may touch mickeymouse,control,toys,mickeymouse,touch,may,control,mickeymouse.png,dinosaur.png,mickeymousecr.png,dinosaurcr.png,mickeymouse,maytoys2.mp3
+3,You may not drink light fluids.,control,drinks,mineralwater,drink,maynot,control,mineralwater.png,chamomiletea.png,mineralwatercr.png,chamomileteacr.png,both,maynotdrinks3.mp3
+3,You may not wear colored sweaters.,control,clothes,bluesweater,wear,maynot,control,bluesweater.png,yellowsweater.png,bluesweatercr.png,yellowsweatercr.png,both,maynotclothes3.mp3
+3,You may not touch colorful toys.,control,toys,house,touch,maynot,control,house.png,bicycle.png,housecr.png,bicyclecr.png,both,maynottoys3.mp3
+3,You may not eat sweet fruits.,control,fruits,plum,eat,maynot,control,plum.png,pineapple.png,plumcr.png,pineapplecr.png,both,maynotfruits3.mp3
+3,You may not eat the big apricot.,control,fruits,apricot,eat,maynot,control,apricot.png,blackberry.png,apricotcr.png,blackberrycr.png,apricot,maynotfruits4.mp3
+3,You may not touch the brown teddy.,control,toys,teddy,touch,maynot,control,teddy.png,bunny.png,teddycr.png,bunnycr.png,bunny,maynottoys4.mp3
+3,You may not wear the red trousers.,control,clothes,redtrousers,wear,maynot,control,redtrousers.png,bluetrousers.png,redtrouserscr.png,bluetrouserscr.png,bluetrousers,maynotclothes4.mp3
+3,You may not drink the hot chocolate.,control,drinks,hotchocolate,drink,maynot,control,hotchocolate.png,orangejuice.png,hotchocolatecr.png,orangejuicecr.png,orangejuice,maynotdrinks4.mp3
+4,Don't take the onion from the table.,warm-up,vegetables,.,take,.,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,.,vegetables1.mp3
+4,Bring me the pumpkin from the table.,warm-up,vegetables,.,bring,.,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,.,vegetables2.mp3
+4,Bring me the cucumber.,warm-up,vegetables,.,bring/cut,.,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,.,vegetables3.mp3
+4,You need not wear the white scarf.,test,clothes,whitescarf,wear,neednot,test,whitescarf.png,bluescarf.png,whitescarfcr.png,bluescarfcr.png,bluescarf,neednotclothes1.mp3
+4,You need not drink the sour milk.,test,drinks,milk,drink,neednot,test,milk.png,chocolate.png,milkcr.png,chocolatecr.png,chocolate,neednotdrinks1.mp3
+4,You need not eat the big banana.,test,fruits,banana,eat,neednot,test,banana.png,apple.png,bananacr.png,applecr.png,apple,neednotfruits1.mp3
+4,You need not touch the chubby penguin.,test,toys,penguin,touch,neednot,test,penguin.png,camel.png,penguincr.png,camelcr.png,camel,neednottoys1.mp3
+4,You need not touch the red car.,test,toys,car,touch,neednot,test,car.png,ball.png,carcr.png,ballcr.png,ball,neednottoys2.mp3
+4,You need not eat the plump orange.,test,fruits,orange,eat,neednot,test,orange.png,pear.png,orangecr.png,pearcr.png,pear,neednotfruits2.mp3
+4,You need not wear the orange beanie.,test,clothes,orangebeanie,wear,neednot,test,orangebeanie.png,greenbeanie.png,orangebeaniecr.png,greenbeaniecr.png,greenbeanie,neednotclothes2.mp3
+4,You need not drink the pear juice.,test,drinks,pearjuice,drink,neednot,test,pearjuice.png,applejuice.png,pearjuicecr.png,applejuicecr.png,applejuice,neednotdrinks2.mp3
+4,You must not eat the spinach juice.,test,drinks,spinachjuice,drink,mustnot,test,spinachjuice.png,carrotjuice.png,spinachjuicecr.png,carrotjuicecr.png,carrotjuice,mustnotdrinks3.mp3
+4,You must not wear the green T-shirt.,test,clothes,greentshirt,wear,mustnot,test,greentshirt.png,purpletshirt.png,greentshirtcr.png,purpletshirtcr.png,purpletshirt,mustnotclothes3.mp3
+4,You must not eat the juicy kiwi.,test,fruits,kiwi,eat,mustnot,test,kiwi.png,coconut.png,kiwicr.png,coconutcr.png,coconut,mustnotfruits3.mp3
+4,You must not touch the yellow duck.,test,toys,duck,touch,mustnot,test,duck.png,truck.png,duckcr.png,truckcr.png,truck,mustnottoys3.mp3
+4,You must not drink cinnamon tea.,test,drinks,cinnamontea,drink,mustnot,test,cinnamontea.png,rosetea.png,cinnamonteacr.png,roseteacr.png,rosetea,mustnotdrinks4.mp3
+4,You must not wear the orange hat.,test,clothes,orangehat,wear,mustnot,test,orangehat.png,blackhat.png,orangehatcr.png,blackhatcr.png,blackhat,mustnotclothes4.mp3
+4,You must not touch the white nice dog.,test,toys,dog,touch,mustnot,test,dog.png,cat.png,dogcr.png,catcr.png,cat,mustnottoys4.mp3
+4,You must not eat the huge strawberry.,test,fruits,strawberry,eat,mustnot,test,strawberry.png,cherry.png,strawberrycr.png,cherrycr.png,cherry,mustnotfruits4.mp3
+4,You may wear colored socks.,control,clothes,yellowsocks,wear,may,control,yellowsocks.png,redsocks.png,yellowsockscr.png,redsockscr.png,both,mayfruits1.mp3
+4,You may drink lemon drinks.,control,drinks,lemonade,drink,may,control,lemonade.png,lemontea.png,lemonadecr.png,lemonteacr.png,both,maydrinks1.mp3
+4,You may touch farm animals.,control,toys,cow,touch,may,control,cow.png,sheep.png,cowcr.png,sheepcr.png,both,maytoys1.mp3
+4,You may eat summer melons.,control,fruits,watermelon,eat,may,control,watermelon.png,sweetmelon.png,watermeloncr.png,sweetmeloncr.png,both,mayfruits1.mp3
+4,You may drink strawberry juice.,control,drinks,strawberryjuice,drink,may,control,strawberryjuice.png,grapejuice.png,strawberryjuicecr.png,grapejuicecr.png,strawberryjuice,maydrinks2.mp3
+4,You may wear the pink jacket.,control,clothes,pinkjacket,wear,may,control,pinkjacket.png,whitejacket.png,pinkjacketcr.png,whitejacketcr.png,pinkjacket,mayclothes2.mp3
+4,You may eat the purple grape.,control,fruits,grapes,eat,may,control,grape.png,peach.png,grapecr.png,peachcr.png,grape,mayfruits2.mp3
+4,You may touch mickeymouse,control,toys,mickeymouse,touch,may,control,mickeymouse.png,dinosaur.png,mickeymousecr.png,dinosaurcr.png,mickeymouse,maytoys2.mp3
+4,You may not drink light fluids.,control,drinks,mineralwater,drink,maynot,control,mineralwater.png,chamomiletea.png,mineralwatercr.png,chamomileteacr.png,both,maynotdrinks3.mp3
+4,You may not wear colored sweaters.,control,clothes,bluesweater,wear,maynot,control,bluesweater.png,yellowsweater.png,bluesweatercr.png,yellowsweatercr.png,both,maynotclothes3.mp3
+4,You may not touch colorful toys.,control,toys,house,touch,maynot,control,house.png,bicycle.png,housecr.png,bicyclecr.png,both,maynottoys3.mp3
+4,You may not eat sweet fruits.,control,fruits,plum,eat,maynot,control,plum.png,pineapple.png,plumcr.png,pineapplecr.png,both,maynotfruits3.mp3
+4,You may not eat the big apricot.,control,fruits,apricot,eat,maynot,control,apricot.png,blackberry.png,apricotcr.png,blackberrycr.png,apricot,maynotfruits4.mp3
+4,You may not touch the brown teddy.,control,toys,teddy,touch,maynot,control,teddy.png,bunny.png,teddycr.png,bunnycr.png,bunny,maynottoys4.mp3
+4,You may not wear the red trousers.,control,clothes,redtrousers,wear,maynot,control,redtrousers.png,bluetrousers.png,redtrouserscr.png,bluetrouserscr.png,bluetrousers,maynotclothes4.mp3
+4,You may not drink the hot chocolate.,control,drinks,hotchocolate,drink,maynot,control,hotchocolate.png,orangejuice.png,hotchocolatecr.png,orangejuicecr.png,orangejuice,maynotdrinks4.mp3

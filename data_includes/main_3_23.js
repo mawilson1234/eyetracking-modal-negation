@@ -1,5 +1,17 @@
 PennController.ResetPrefix(null) // Keep this here
 
+// this randomly shuffles an array in-place, which
+// lets us randomize the presentation order on each trial
+// from https://stackoverflow.com/questions/49555273/how-to-shuffle-an-array-of-objects-in-javascript
+function shuffleFisherYates(array) {
+    let i = array.length;
+    while (i--) {
+        const ri = Math.floor(Math.random() * i);
+        [array[i], array[ri]] = [array[ri], array[i]];
+    }
+    return array;
+}
+
 // IMPORTANT NOTE: when running this project, the eye-tracker will highlight
 // the element that it estimates the participant is looking at
 // Edit the file PennController.css in the Aesthetics folder to remove highlighting
@@ -8,16 +20,30 @@ PennController.ResetPrefix(null) // Keep this here
 //       because the command EyeTrackerURL below points to a dummy URL in the
 
 // Resources are hosted as ZIP files on a distant server
-PreloadZip("https://campuspress.yale.edu/michaelwilson/2023/03/audio.zip")
-PreloadZip("https://campuspress.yale.edu/michaelwilson/2023/03/images.zip")
+// PreloadZip("https://github.com/mawilson1234/eyetracking-modal-negation/blob/main/audio.zip?raw=true")
+// PreloadZip("https://github.com/mawilson1234/eyetracking-modal-negation/blob/main/images.zip?raw=true")
 
 // Replace the URL with one that points to a PHP script that you uploaded to your webserver
 // see: https://doc.pcibex.net/how-to-guides/collecting-eyetracking-data/#php-script
 // EyeTrackerURL("https://dummy.url/script.php")
 
 // currently 0 for debugging/testing script functionality
-var REQUIRED_ACCURACY = 0
-var MAX_CALIBRATION_ATTEMPTS = 2
+var REQUIRED_ACCURACY = 0;
+var MAX_CALIBRATION_ATTEMPTS = 2;
+
+SetCounter('setcounter')
+
+// change x to a number to fill out the lists equally (starts from 0)
+// var counterOverride = x;
+
+Sequence(
+    'setcounter',
+    'check',
+    'practice-trial',
+    randomize('experimental-trial'),
+    SendResults(),
+    'bye'
+)
 
 // Welcome page: we do a first calibration here---meanwhile, the resources are preloading
 newTrial("check",
@@ -70,8 +96,20 @@ newTrial("check",
 // by the time the tracker is calibrated
 CheckPreloaded()
 
-Template("Modalnegationeyetracking_fin.csv", row =>
-    newTrial("trial",
+var eyetracker_trial = label => row => {
+    // all participants see the practice items
+    var list = label === 'practice-trial' ? 'practice' : row.list
+    
+    // get a random order for the four images
+    var images = ['image1', 'image2', 'image3', 'image4']
+    shuffleFisherYates(images)
+    
+    // unpack the shuffled array
+    // now we use these identifiers below
+    let image1, image2, image3, image4
+    [image1, image2, image3, image4] = images
+    
+    return NewTrial(label,
         newEyeTracker("tracker")
             .calibrate(REQUIRED_ACCURACY, MAX_CALIBRATION_ATTEMPTS)
         ,
@@ -89,32 +127,32 @@ Template("Modalnegationeyetracking_fin.csv", row =>
         
         // newCanvas("name" , "percentage of screensize in width" , "percentage of screensize in height" )
         newCanvas("upleft", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(row.image1) )
+            .add( "center at 25%" , "middle at 50%" , newImage(image1) )
             .print( "center at 25vw" , "middle at 25vh" )
         ,
         
         newCanvas("upright", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(row.image2) )
+            .add( "center at 25%" , "middle at 50%" , newImage(image2) )
             .print( "center at 25vw" , "middle at 75vh" )
         ,
         
         newCanvas("downleft", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(row.image3) )
+            .add( "center at 25%" , "middle at 50%" , newImage(image3) )
             .print( "center at 75vw" , "middle at 25vh" )
         ,
         
         newCanvas("downright", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(row.image4) )
+            .add( "center at 25%" , "middle at 50%" , newImage(image4) )
             .print( "center at 75vw" , "middle at 75vh" )
         ,
         
         // Print a playbutton in the centre of the screen to play the 
         // Audio since not every Browser supports Autoplay; Alternative to .play()
         // TODO: can we restrict participants to browsers with autoplay for consistency?
-        newAudio(row.audio)
-            .center() 
-            .print()
-        ,
+        // newAudio(row.audio)
+         //   .center() 
+           // .print()
+        //,
         
         getEyeTracker("tracker")
             .add(    
@@ -162,7 +200,7 @@ Template("Modalnegationeyetracking_fin.csv", row =>
             .start()
             .wait()
     )
-        .log('list', row.list)
+        .log('list', list)
         .log('sentence', row.sentence)
         .log('type', row.type)
         .log('item', row.item)
@@ -170,17 +208,20 @@ Template("Modalnegationeyetracking_fin.csv", row =>
         .log('verb', row.verb)
         .log('Condition', row.Condition)
         .log('Typecondition', row.Typecondition)
-        .log('image1', row.image1)
-        .log('image2', row.image2)
-        .log('image3', row.image3)
-        .log('image4', row.image4)
+        .log('image1', image1)
+        .log('image2', image2)
+        .log('image3', image3)
+        .log('image4', image4)
         .log('target-picture', row['target-picture'])
         .log('audio', row.audio)
-)
+}
+
+Template("Practice.csv", eyetracker_trial('practice-trial'))
+Template("Modalnegationeyetracking_finFIX.csv", eyetracker_trial('experimental-trial'))
 
 SendResults()
 
-newTrial(
+newTrial("bye",
     exitFullscreen()
     ,
     

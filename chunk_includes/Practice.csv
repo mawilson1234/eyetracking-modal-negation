@@ -1,0 +1,4 @@
+sentence,type,item,Specificitem,verb,Condition,Typecondition,image1,image2,image3,image4,target-picture,audio
+Don't take the onion from the table.,warm-up,vegetables,.,take,.,warmup,pepper.png,onion.png,peppercr.png,onioncr.png,pepper,vegetables1.mp3
+Bring me the pumpkin from the table.,warm-up,vegetables,.,bring,.,warmup,pumpkin.png,cabbage.png,pumpkincr.png,cabbagecr.png,pumpkin,vegetables2.mp3
+Bring me the cucumber.,warm-up,vegetables,.,bring/cut,.,warmup,cucumber.png,tomato.png,cucumbercr.png,tomatocr.png,cucumber,vegetables3.mp3
