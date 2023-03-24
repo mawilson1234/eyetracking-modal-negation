@@ -38,11 +38,36 @@ SetCounter('setcounter')
 
 Sequence(
     'setcounter',
+    'welcome',
     'check',
     'practice-trial',
     randomize('experimental-trial'),
     SendResults(),
     'bye'
+)
+
+// Welcome screen and logging user's ID
+Header( /* void */ )
+    // This .log command will apply to all trials
+    .log( "ID" , GetURLParameter("id") ) // Append the "ID" URL parameter to each result line
+
+newTrial( "welcome" ,
+    // We will print all Text elements, horizontally centered
+    defaultText().print().center
+    ,
+    newText("Welcome!")
+    ,
+    newText(
+        "In this experiment you will hear someone talk about " + 
+        "certain objects, and you will be asked to decide which " +
+        "object/objects you are allowed to use."
+    )
+    ,
+    newText("To do this, you will click on the object/objects you think you can use.")
+    ,
+    newText("When you are ready, press SPACE.")
+    ,
+    newKey(" ").wait()  // Finish trial upon press on spacebar
 )
 
 // Welcome page: we do a first calibration here---meanwhile, the resources are preloading
