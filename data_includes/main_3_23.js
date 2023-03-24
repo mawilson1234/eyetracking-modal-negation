@@ -53,7 +53,7 @@ Header( /* void */ )
 
 newTrial( "welcome" ,
     // We will print all Text elements, horizontally centered
-    defaultText().print().center
+    defaultText.print().center
     ,
     newText("Welcome!")
     ,
