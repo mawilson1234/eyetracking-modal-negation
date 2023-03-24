@@ -159,22 +159,22 @@ var eyetracker_trial = label => row => {
         
         // newCanvas("name" , "percentage of screensize in width" , "percentage of screensize in height" )
         newCanvas("upleft", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(image1) )
+            .add( "center at 25%" , "middle at 50%" , newImage(row[image1]) )
             .print( "center at 25vw" , "middle at 25vh" )
         ,
         
         newCanvas("upright", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(image2) )
+            .add( "center at 25%" , "middle at 50%" , newImage(row[image2]) )
             .print( "center at 25vw" , "middle at 75vh" )
         ,
         
         newCanvas("downleft", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(image3) )
+            .add( "center at 25%" , "middle at 50%" , newImage(row[image3]) )
             .print( "center at 75vw" , "middle at 25vh" )
         ,
         
         newCanvas("downright", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(image4) )
+            .add( "center at 25%" , "middle at 50%" , newImage(row[image4]) )
             .print( "center at 75vw" , "middle at 75vh" )
         ,
         
@@ -241,10 +241,10 @@ var eyetracker_trial = label => row => {
         .log('verb', row.verb)
         .log('Condition', row.Condition)
         .log('Typecondition', row.Typecondition)
-        .log('imageul', image1)
-        .log('imageur', image2)
-        .log('imagebl', image3)
-        .log('imagebr', image4)
+        .log('imageul', row[image1])
+        .log('imageur', row[image2])
+        .log('imagebl', row[image3])
+        .log('imagebr', row[image4])
         .log('target-picture', row['target-picture'])
         .log('audio', row.audio)
 }
