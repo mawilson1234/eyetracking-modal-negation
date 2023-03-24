@@ -12,6 +12,13 @@ function shuffleFisherYates(array) {
     return array;
 }
 
+var centered_justified_style = {
+    "text-align": "justify", 
+    margin: '0 auto', 
+    'margin-bottom': '3em',
+    width: '30em'
+}
+
 // IMPORTANT NOTE: when running this project, the eye-tracker will highlight
 // the element that it estimates the participant is looking at
 // Edit the file PennController.css in the Aesthetics folder to remove highlighting
@@ -40,7 +47,8 @@ Sequence(
     'setcounter',
     'welcome',
     'check',
-    'practice-trial',
+    'check-preloaded',
+    randomize('practice-trial'),
     randomize('experimental-trial'),
     SendResults(),
     'bye'
@@ -53,7 +61,8 @@ Header( /* void */ )
 
 newTrial( "welcome" ,
     // We will print all Text elements, horizontally centered
-    defaultText.print().center
+    // we can modify the CSS to make this look a little better
+    defaultText.css(centered_justified_style).print()
     ,
     newText("Welcome!")
     ,
@@ -117,24 +126,22 @@ newTrial("check",
         .wait()
 )
 
-// Wait if the resources have not finished preloading 
-// by the time the tracker is calibrated
-CheckPreloaded()
+CheckPreloaded('check-preloaded')
 
-var eyetracker_trial = label => row => {
+var eyetracker_trial = label => row => { 
     // all participants see the practice items
     var list = label === 'practice-trial' ? 'practice' : row.list
     
     // get a random order for the four images
     var images = ['image1', 'image2', 'image3', 'image4']
     shuffleFisherYates(images)
-    
+
     // unpack the shuffled array
     // now we use these identifiers below
     let image1, image2, image3, image4
     [image1, image2, image3, image4] = images
     
-    return NewTrial(label,
+    return newTrial(label, 
         newEyeTracker("tracker")
             .calibrate(REQUIRED_ACCURACY, MAX_CALIBRATION_ATTEMPTS)
         ,
@@ -143,11 +150,11 @@ var eyetracker_trial = label => row => {
             .start()
             .wait()
         ,
-        
+
         // We will print two pairs of images, one image on each quadrant of the page
         // The images are 20%-width x 20%-height of the page, but each pair is contained
         // in a 40% Canvas so as to capture slightly-off gazes
-        defaultImage.size("20vh", "20vh")
+        defaultImage.size("20vw", "20vh")
         ,
         
         // newCanvas("name" , "percentage of screensize in width" , "percentage of screensize in height" )
@@ -171,14 +178,6 @@ var eyetracker_trial = label => row => {
             .print( "center at 75vw" , "middle at 75vh" )
         ,
         
-        // Print a playbutton in the centre of the screen to play the 
-        // Audio since not every Browser supports Autoplay; Alternative to .play()
-        // TODO: can we restrict participants to browsers with autoplay for consistency?
-        // newAudio(row.audio)
-         //   .center() 
-           // .print()
-        //,
-        
         getEyeTracker("tracker")
             .add(    
                 getCanvas("upleft"),
@@ -199,7 +198,16 @@ var eyetracker_trial = label => row => {
             .log()
             .play()
         ,
-
+        
+        newTimer(1000)
+            .start()
+            .wait()
+        ,
+        
+        getAudio("audio")
+            .wait("first")
+        ,
+        
         newSelector("answer")
             .add(
                 getCanvas("upleft"),
@@ -225,7 +233,7 @@ var eyetracker_trial = label => row => {
             .start()
             .wait()
     )
-        .log('list', list)
+        .log('Group', list)
         .log('sentence', row.sentence)
         .log('type', row.type)
         .log('item', row.item)
@@ -233,10 +241,10 @@ var eyetracker_trial = label => row => {
         .log('verb', row.verb)
         .log('Condition', row.Condition)
         .log('Typecondition', row.Typecondition)
-        .log('image1', image1)
-        .log('image2', image2)
-        .log('image3', image3)
-        .log('image4', image4)
+        .log('imageul', image1)
+        .log('imageur', image2)
+        .log('imagebl', image3)
+        .log('imagebr', image4)
         .log('target-picture', row['target-picture'])
         .log('audio', row.audio)
 }
