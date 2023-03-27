@@ -12,6 +12,18 @@ function shuffleFisherYates(array) {
     return array;
 }
 
+const newToggleImage = (name,file,selector_name) => [
+    newVar(name+"-var", 1),
+    newSelector(name+"-sel")
+        .frame("solid 3px black")
+        .callback( getVar(name+"-var").set(v=>1-v).test.is(1).success(getSelector(name+"-sel").unselect()) )
+        .log()
+    ,
+    newImage(name, file)
+        .size(200,200)
+        .selector(selector_name).selector(name+"-sel")
+]
+
 var centered_justified_style = {
     "text-align": "justify", 
     margin: '0 auto', 
@@ -154,27 +166,44 @@ var eyetracker_trial = label => row => {
         // We will print two pairs of images, one image on each quadrant of the page
         // The images are 20%-width x 20%-height of the page, but each pair is contained
         // in a 40% Canvas so as to capture slightly-off gazes
-        defaultImage.size("20vw", "20vh")
+        defaultImage
+            .size("20vw", "20vh")
+        ,
+        
+        newSelector("answer")
+            .disable()
+        ,
+        
+        newToggleImage('ul', row[image1], 'answer')
+        ,
+        
+        newToggleImage('ur', row[image2], 'answer')
+        ,
+        
+        newToggleImage('dl', row[image3], 'answer')
+        ,
+        
+        newToggleImage('dr', row[image4], 'answer')
         ,
         
         // newCanvas("name" , "percentage of screensize in width" , "percentage of screensize in height" )
         newCanvas("upleft", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(row[image1]) )
+            .add( "center at 25%" , "middle at 50%" ,  getImage('ul'))
             .print( "center at 25vw" , "middle at 25vh" )
         ,
         
         newCanvas("upright", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(row[image2]) )
+            .add( "center at 25%" , "middle at 50%" ,  getImage('ur'))
             .print( "center at 25vw" , "middle at 75vh" )
         ,
         
         newCanvas("downleft", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(row[image3]) )
+            .add( "center at 25%" , "middle at 50%" ,  getImage('dl'))
             .print( "center at 75vw" , "middle at 25vh" )
         ,
         
         newCanvas("downright", "20vw", "40vh")
-            .add( "center at 25%" , "middle at 50%" , newImage(row[image4]) )
+            .add( "center at 25%" , "middle at 50%" ,  getImage('dr'))
             .print( "center at 75vw" , "middle at 75vh" )
         ,
         
@@ -208,22 +237,16 @@ var eyetracker_trial = label => row => {
             .wait("first")
         ,
         
-        newSelector("answer")
+        newCanvas("answer")
             .add(
                 getCanvas("upleft"),
                 getCanvas("upright"),
                 getCanvas("downleft"),
-                getCanvas("downright") 
+                getCanvas("downright")
             )
-            .once()
-            .log()
-            .wait()
-        ,
-        
-        getEyeTracker("tracker")
-            .stop()
-            .log()
-        ,
+            .center()
+            .print()
+        , 
         
         getAudio("audio")
             .wait("first")
@@ -232,6 +255,19 @@ var eyetracker_trial = label => row => {
         newTimer(250)
             .start()
             .wait()
+        ,
+        
+        newButton("continue", "Continue")
+            .center()
+            .print()
+            .wait(
+                getSelector('answer').test.selected()
+            )
+        ,
+        
+        getEyeTracker("tracker")
+            .stop()
+            .log()
     )
         .log('Group', list)
         .log('sentence', row.sentence)
